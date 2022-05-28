@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper game</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload="initGame()">
+    <h1 class="title">Minesweeper Game</h1>
+
+    <h3 class="difficulties">Choose Level Of Difficulties:</h3>
+    <div class="container">        
+        <button onclick="chooseLevel(4)" value="4">Beginner</button>
+        <button onclick="chooseLevel(8)" value="8">Medium</button>
+        <button onclick="chooseLevel(12)" value="12">Expert</button>
+    </div>
+
+    <div class="container2">
+        <div class="lives"></div>
+        <div class="smiley"></div>
+    </div>
+
+    <table></table>
+
+    <div class="countUpTimer">00:00:00</div>
+
+    <div class="modal"></div>
+    <button onclick="restartBun()" class="restart">Restart</button>
+
+    <p>Sharon Gashri</p>
+
+    <script src="js/util.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
